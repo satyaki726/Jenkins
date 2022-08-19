@@ -11,10 +11,5 @@ pipeline {
                sh "clean install"
             }
         }
-    }
-    post {
-       always {
-              cleanWs()
-              }
-         }     
+    }  
 }
