@@ -1,15 +1,2 @@
-pipeline {
-    agent any
-    
-    tools{
-        maven "maven-3.8.6"
-    }
-
-    stages {
-        stage('Hello') {
-            steps {
-               bat "mvn install"
-            }
-        }
-    }  
-}
+@Library('My-Shared-Library') _
+javaBuild 'https://github.com/satyaki726/Jenkins.git'
