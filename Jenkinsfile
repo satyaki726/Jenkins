@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-               sh "clean install"
+               bat "clean install"
             }
         }
     }  
